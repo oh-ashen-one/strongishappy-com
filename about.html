@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About \#StrongIsHappy — gym in Phoenix</title>
+  <meta name="description" content="Learn about \#StrongIsHappy, a trusted gym serving Phoenix and surrounding areas.">
+  <link rel="canonical" href="https://oh-ashen-one.github.io/strongishappy-com/about.html">
+  <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #de2d2d; }
+        .clip-slant { clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style id="forge-theme">
+:root {
+  --primary: #0D2818;
+  --bg: #111111;
+  --accent: #4CAF50;
+  --text: #e8e8e8;
+  --text-light: #e8e8e8cc;
+  --header-font: 'DM Sans', system-ui, sans-serif;
+}
+/* Dark theme overrides — all backgrounds dark, all text light */
+body, body[style], html { background-color: #111111 !important; color: #e8e8e8 !important; }
+header[style], nav[style], .header[style], .navbar[style] { background-color: #0D2818 !important; }
+footer[style], .footer[style] { background-color: #0D2818 !important; color: #e8e8e8 !important; }
+section, section[style], div[style*="background"] { background-color: #111111 !important; color: #e8e8e8 !important; }
+h1, h2, h3, h4, h1[style], h2[style], h3[style], h4[style] { color: #e8e8e8 !important; font-family: 'DM Sans', system-ui, sans-serif !important; }
+p, span, li, td, th, label, blockquote { color: #e8e8e8 !important; }
+[class*="hero"][style], [class*="hero"] div[style] { background-color: #0D2818 !important; }
+[class*="hero"] h1, [class*="hero"] h2 { color: #fff !important; }
+a:not(button a) { color: #4CAF50 !important; }
+button, .btn, [class*="btn"], input[type="submit"] { background-color: #4CAF50 !important; color: #fff !important; border-color: #4CAF50 !important; }
+/* Card surfaces — slightly lighter than body bg for depth */
+[class*="card"], [class*="testimonial"], [class*="service"] { background-color: color-mix(in srgb, #111111 85%, white) !important; }
+</style>
+<script id="forge-theme-js">
+(function() {
+  function applyTheme() {
+    var primary = '#0D2818';
+    var bg = '#111111';
+    var accent = '#4CAF50';
+    var textColor = '#e8e8e8';
+    // Override body background + text
+    document.body.style.setProperty('background-color', bg, 'important');
+    document.body.style.setProperty('color', textColor, 'important');
+    // Override ALL text elements to light color
+    document.querySelectorAll('p, span, li, td, th, label, blockquote, h1, h2, h3, h4, h5, h6').forEach(function(el) {
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override header/nav
+    document.querySelectorAll('header, nav, .header, .navbar, [class*="header"], [class*="navbar"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+    });
+    // Override sections
+    document.querySelectorAll('section, [class*="section"]').forEach(function(el) {
+      el.style.setProperty('background-color', bg, 'important');
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override footer
+    document.querySelectorAll('footer, .footer, [class*="footer"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override hero sections
+    document.querySelectorAll('[class*="hero"], [id*="hero"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+    });
+    // Override buttons
+    document.querySelectorAll('button, .btn, [class*="btn"], input[type="submit"]').forEach(function(el) {
+      el.style.setProperty('background-color', accent, 'important');
+      el.style.setProperty('border-color', accent, 'important');
+      el.style.setProperty('color', '#fff', 'important');
+    });
+    // Override links (not inside buttons)
+    document.querySelectorAll('a:not(button a)').forEach(function(el) {
+      if (!el.closest('button') && !el.classList.toString().includes('btn')) {
+        el.style.setProperty('color', accent, 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyTheme);
+  } else {
+    applyTheme();
+  }
+})();
+</script>
+</head>
+<body style="background:#131313;color:#e0e0e0;font-family:system-ui,sans-serif;margin:0;">
+  <nav class="fixed top-0 w-full flex justify-between items-center px-8 max-w-full bg-[#0e0e0e]/70 backdrop-blur-xl docked full-width z-50 transition-all duration-300 ease-in-out h-20 hover:h-16 group">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#ff8e84] tracking-tighter font-['Space_Grotesk'] uppercase">\#StrongIsHappy</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-[#ff8e84] border-b-2 border-[#ff8e84] pb-1" href="#home">Home</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#services">Services</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#stats">Stats</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#testimonials">Testimonials</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#faq">FAQ</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="font-['Space_Grotesk'] font-bold text-[#ff8e84] tracking-tighter hover:text-[#ff7b04] transition-all" href="tel:+16022740733">602-274-0733</a>
+<button class="bg-gradient-to-tr from-primary to-primary-container px-6 py-2 font-bold uppercase text-on-primary-container text-sm tracking-widest active:scale-95 transition-transform">Join Now</button>
+</div>
+</nav>
+  <main style="max-width:900px;margin:0 auto;padding:80px 20px;">
+    <h1 style="font-size:2.5rem;margin-bottom:1rem;">About \#StrongIsHappy</h1>
+    <p>Proudly serving Phoenix and the surrounding community, \#StrongIsHappy has built a reputation for reliable, high-quality gym services.</p>
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>Experienced, licensed professionals</li>
+      <li>Transparent pricing with no hidden fees</li>
+      <li>Committed to customer satisfaction</li>
+      <li>Serving the Phoenix area</li>
+    </ul>
+    <p><a href="contact.html" style="color:#4ecdc4;">Contact us today</a> | <a href="index.html" style="color:#4ecdc4;">Back to Home</a> | <a href="services.html" style="color:#4ecdc4;">Our Services</a></p>
+  </main>
+  <footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left bg-[#000000] border-t-0 font-['Inter'] text-xs font-medium uppercase tracking-widest">
+<div class="flex flex-col gap-2">
+<span class="text-[#de2d2d] font-black text-2xl tracking-tighter">\#StrongIsHappy</span>
+<p class="text-white/40">© 2024 \#StrongIsHappy Gym Phoenix. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="tel:+16022740733">602-274-0733</a>
+<span class="text-white/40">Phoenix, AZ</span>
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="#">Privacy Policy</a>
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="#">Terms of Service</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+</button>
+<button class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</button>
+</div>
+</footer>
+</body>
+</html>

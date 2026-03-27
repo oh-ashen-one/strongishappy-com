@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>\#StrongIsHappy | Phoenix Premier Gym</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-dim": "#d73357",
+              "on-surface": "#ffffff",
+              "primary-container": "#ff766c",
+              "on-surface-variant": "#adaaaa",
+              "primary-fixed": "#ff766c",
+              "outline": "#767575",
+              "on-background": "#ffffff",
+              "error": "#ff6e84",
+              "on-secondary-fixed": "#582600",
+              "on-tertiary-fixed-variant": "#5f5000",
+              "on-tertiary-container": "#544700",
+              "surface-tint": "#ff8e84",
+              "tertiary-fixed": "#f4d001",
+              "inverse-primary": "#be0f1a",
+              "secondary-fixed": "#ffc5a4",
+              "surface-container-lowest": "#000000",
+              "surface": "#0e0e0e",
+              "on-secondary-fixed-variant": "#843c00",
+              "secondary-container": "#994700",
+              "surface-container": "#1a1919",
+              "error-container": "#a70138",
+              "surface-container-low": "#131313",
+              "background": "#0e0e0e",
+              "primary": "#ff8e84",
+              "tertiary-dim": "#e4c200",
+              "on-primary-fixed-variant": "#600006",
+              "on-tertiary-fixed": "#3e3400",
+              "on-secondary": "#3d1800",
+              "primary-fixed-dim": "#ff5a52",
+              "on-error-container": "#ffb2b9",
+              "secondary-dim": "#fb7800",
+              "secondary": "#ff7b04",
+              "outline-variant": "#484847",
+              "tertiary-container": "#f4d001",
+              "surface-bright": "#2c2c2c",
+              "on-primary-fixed": "#000000",
+              "inverse-on-surface": "#565555",
+              "tertiary": "#ffde4a",
+              "on-secondary-container": "#fff6f2",
+              "surface-container-high": "#201f1f",
+              "inverse-surface": "#fcf9f8",
+              "primary-dim": "#de2d2d",
+              "on-primary": "#650006",
+              "tertiary-fixed-dim": "#e4c200",
+              "secondary-fixed-dim": "#ffb284",
+              "surface-variant": "#262626",
+              "on-primary-container": "#4f0004",
+              "on-tertiary": "#5e4f00",
+              "surface-dim": "#0e0e0e",
+              "on-error": "#490013",
+              "surface-container-highest": "#262626"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #de2d2d; }
+        .clip-slant { clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style id="forge-theme">
+:root {
+  --primary: #0D2818;
+  --bg: #111111;
+  --accent: #4CAF50;
+  --text: #e8e8e8;
+  --text-light: #e8e8e8cc;
+  --header-font: 'DM Sans', system-ui, sans-serif;
+}
+/* Dark theme overrides — all backgrounds dark, all text light */
+body, body[style], html { background-color: #111111 !important; color: #e8e8e8 !important; }
+header[style], nav[style], .header[style], .navbar[style] { background-color: #0D2818 !important; }
+footer[style], .footer[style] { background-color: #0D2818 !important; color: #e8e8e8 !important; }
+section, section[style], div[style*="background"] { background-color: #111111 !important; color: #e8e8e8 !important; }
+h1, h2, h3, h4, h1[style], h2[style], h3[style], h4[style] { color: #e8e8e8 !important; font-family: 'DM Sans', system-ui, sans-serif !important; }
+p, span, li, td, th, label, blockquote { color: #e8e8e8 !important; }
+[class*="hero"][style], [class*="hero"] div[style] { background-color: #0D2818 !important; }
+[class*="hero"] h1, [class*="hero"] h2 { color: #fff !important; }
+a:not(button a) { color: #4CAF50 !important; }
+button, .btn, [class*="btn"], input[type="submit"] { background-color: #4CAF50 !important; color: #fff !important; border-color: #4CAF50 !important; }
+/* Card surfaces — slightly lighter than body bg for depth */
+[class*="card"], [class*="testimonial"], [class*="service"] { background-color: color-mix(in srgb, #111111 85%, white) !important; }
+</style>
+<script id="forge-theme-js">
+(function() {
+  function applyTheme() {
+    var primary = '#0D2818';
+    var bg = '#111111';
+    var accent = '#4CAF50';
+    var textColor = '#e8e8e8';
+    // Override body background + text
+    document.body.style.setProperty('background-color', bg, 'important');
+    document.body.style.setProperty('color', textColor, 'important');
+    // Override ALL text elements to light color
+    document.querySelectorAll('p, span, li, td, th, label, blockquote, h1, h2, h3, h4, h5, h6').forEach(function(el) {
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override header/nav
+    document.querySelectorAll('header, nav, .header, .navbar, [class*="header"], [class*="navbar"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+    });
+    // Override sections
+    document.querySelectorAll('section, [class*="section"]').forEach(function(el) {
+      el.style.setProperty('background-color', bg, 'important');
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override footer
+    document.querySelectorAll('footer, .footer, [class*="footer"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+      el.style.setProperty('color', textColor, 'important');
+    });
+    // Override hero sections
+    document.querySelectorAll('[class*="hero"], [id*="hero"]').forEach(function(el) {
+      el.style.setProperty('background-color', primary, 'important');
+    });
+    // Override buttons
+    document.querySelectorAll('button, .btn, [class*="btn"], input[type="submit"]').forEach(function(el) {
+      el.style.setProperty('background-color', accent, 'important');
+      el.style.setProperty('border-color', accent, 'important');
+      el.style.setProperty('color', '#fff', 'important');
+    });
+    // Override links (not inside buttons)
+    document.querySelectorAll('a:not(button a)').forEach(function(el) {
+      if (!el.closest('button') && !el.classList.toString().includes('btn')) {
+        el.style.setProperty('color', accent, 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyTheme);
+  } else {
+    applyTheme();
+  }
+})();
+</script>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 max-w-full bg-[#0e0e0e]/70 backdrop-blur-xl docked full-width z-50 transition-all duration-300 ease-in-out h-20 hover:h-16 group">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#ff8e84] tracking-tighter font-['Space_Grotesk'] uppercase">\#StrongIsHappy</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-[#ff8e84] border-b-2 border-[#ff8e84] pb-1" href="#home">Home</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#services">Services</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#stats">Stats</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#testimonials">Testimonials</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-white/70 hover:text-white transition-colors" href="#faq">FAQ</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="font-['Space_Grotesk'] font-bold text-[#ff8e84] tracking-tighter hover:text-[#ff7b04] transition-all" href="tel:+16022740733">602-274-0733</a>
+<button class="bg-gradient-to-tr from-primary to-primary-container px-6 py-2 font-bold uppercase text-on-primary-container text-sm tracking-widest active:scale-95 transition-transform">Join Now</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Split Screen -->
+<section class="min-h-screen flex flex-col md:flex-row pt-20 overflow-hidden" id="home">
+<div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-20 py-20 bg-surface z-10">
+<div class="max-w-xl">
+<span class="inline-block px-3 py-1 bg-surface-container-highest text-tertiary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border-l-4 border-primary">Est. 2014 Phoenix</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold uppercase leading-[0.9] tracking-tighter mb-8 italic">
+                        \#StrongIsHappy: <span class="text-primary-dim block not-italic">Your Ultimate</span> Fitness Destination
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl font-light mb-10 max-w-md border-l border-outline-variant/30 pl-6">
+                        Phoenix's premier gym for professional training and transformative results. Industrial grit meets premium performance.
+                    </p>
+<div class="flex flex-col gap-4 sm:flex-row">
+<button class="bg-primary text-on-primary font-black uppercase py-5 px-10 text-lg tracking-tighter hover:bg-primary-container transition-colors shadow-[8px_8px_0px_0px_rgba(222,45,45,0.3)]">
+                            Start Now
+                        </button>
+<button class="border-2 border-primary-dim text-primary py-5 px-10 font-black uppercase text-lg tracking-tighter hover:bg-primary-dim/10 transition-colors">
+                            View Services
+                        </button>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative min-h-[400px] md:min-h-screen group">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10"></div>
+<img alt="Industrial Gym Interior" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700" data-alt="Interior of a high-end industrial gym in Phoenix with professional powerlifting racks, dark atmosphere, and cinematic dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZoid71LdKbFw2c8Lwi-R-SYj7rvzEx1DTAhVg1KaM4WGM0IU2I-fmTmS2NeGwEYAlYD7b9Nq9xnfx9sRLTUnyQoq53oL0PDJytkNHwSXRaxLcekrq1G3BkkuGwdxyGtcYoygAFz4FdZ47xBMtRGJBT7YgOJDCg4AQqqBO-jqyT8F8tufLA_S76o8Q4sxpb0LBASCQ_O7OxEK-YMXnTAPj93ODe3thmJ3zdJ318_a5Lmu2oH9q4GPpKAOw_pVTExUcxkWkXeMRdVI"/>
+<div class="absolute bottom-12 right-12 z-20 flex flex-col items-end">
+<div class="bg-primary text-on-primary p-4 font-black text-4xl italic tracking-tighter">PR DRIVEN</div>
+<div class="bg-on-surface text-surface p-2 font-bold text-xs uppercase tracking-widest mt-1">Professional Grade Equipment</div>
+</div>
+</div>
+</section>
+<!-- Trust/Stats: Horizontal Bar -->
+<section class="bg-surface-container-low border-y border-outline-variant/10 py-16" id="stats">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="flex flex-col items-center">
+<span class="text-tertiary font-headline text-6xl font-black mb-2">10+</span>
+<span class="text-on-surface-variant uppercase tracking-[0.2em] font-bold text-xs">Years of Excellence</span>
+</div>
+<div class="flex flex-col items-center border-y md:border-y-0 md:border-x border-outline-variant/20 py-8 md:py-0">
+<span class="text-primary font-headline text-6xl font-black mb-2">5000+</span>
+<span class="text-on-surface-variant uppercase tracking-[0.2em] font-bold text-xs">Success Stories</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-secondary font-headline text-6xl font-black mb-2">24/7</span>
+<span class="text-on-surface-variant uppercase tracking-[0.2em] font-bold text-xs">Access to Iron</span>
+</div>
+</div>
+</section>
+<!-- Services: Vertical Staggered Panels -->
+<section class="py-24 bg-surface" id="services">
+<div class="max-w-7xl mx-auto px-8 mb-16 flex justify-between items-end">
+<div>
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 italic">The Arsenal</h2>
+<div class="h-2 w-32 bg-primary"></div>
+</div>
+<p class="text-on-surface-variant max-w-xs text-right text-sm uppercase font-bold tracking-widest">Premium services designed for the elite mindset.</p>
+</div>
+<div class="space-y-4">
+<!-- Service Accordion/Panel -->
+<div class="group relative overflow-hidden bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 cursor-pointer">
+<div class="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 border-l-0 group-hover:border-l-[12px] border-primary transition-all">
+<div class="flex items-center gap-8">
+<span class="font-headline text-5xl md:text-7xl font-black text-outline-variant/30 group-hover:text-primary transition-colors">01</span>
+<div>
+<h3 class="font-headline text-2xl md:text-4xl font-extrabold uppercase tracking-tighter">Powerlifting Focus</h3>
+<p class="text-on-surface-variant mt-2 group-hover:text-on-surface transition-colors">Competition-grade racks, bars, and plates for serious strength gains.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-5xl text-primary opacity-0 group-hover:opacity-100 transition-opacity hidden md:block" data-icon="fitness_center">fitness_center</span>
+</div>
+<div class="absolute right-0 top-0 h-full w-1/4 opacity-0 group-hover:opacity-10 transition-opacity">
+<img alt="Weightlifting" class="w-full h-full object-cover" data-alt="Close-up of chalked hands gripping a heavy barbell in a dark gym setting with intense atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvSalkBxiVy5mjd-j5ToIdn6vyUvf8t6S3d5fHq6RbQ3LIT7blFeKAmonzBiUrUU-EM46ivBrcDkvH_BpJ9ChABJ68HmMZNLQAyBU5LiIdeBXX-CBWhqClsQQwtXKg99XUChb5tOvCCwyCg3aHUnJZxYv8X4hPTPbpEWFwrWA0bBIEooUvD4qzN9w1u7op5lv58oMJdSm4DIxu-yTLo7jd4ngwXbJjDEEYFQ_BmWGHsLpor2U2yhhOfkILs2Ily4Qa9m2F1CZD5RI"/>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 cursor-pointer">
+<div class="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 border-l-0 group-hover:border-l-[12px] border-secondary transition-all">
+<div class="flex items-center gap-8">
+<span class="font-headline text-5xl md:text-7xl font-black text-outline-variant/30 group-hover:text-secondary transition-colors">02</span>
+<div>
+<h3 class="font-headline text-2xl md:text-4xl font-extrabold uppercase tracking-tighter">Personal Training</h3>
+<p class="text-on-surface-variant mt-2 group-hover:text-on-surface transition-colors">One-on-one sessions with Phoenix's most decorated strength coaches.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-5xl text-secondary opacity-0 group-hover:opacity-100 transition-opacity hidden md:block" data-icon="groups">groups</span>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 cursor-pointer">
+<div class="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 border-l-0 group-hover:border-l-[12px] border-tertiary transition-all">
+<div class="flex items-center gap-8">
+<span class="font-headline text-5xl md:text-7xl font-black text-outline-variant/30 group-hover:text-tertiary transition-colors">03</span>
+<div>
+<h3 class="font-headline text-2xl md:text-4xl font-extrabold uppercase tracking-tighter">Athletic Recovery</h3>
+<p class="text-on-surface-variant mt-2 group-hover:text-on-surface transition-colors">Cryotherapy and specialized sports massage to keep you in the game.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-5xl text-tertiary opacity-0 group-hover:opacity-100 transition-opacity hidden md:block" data-icon="medical_services">medical_services</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials: Carousel (Grid Scroll) -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden" id="testimonials">
+<div class="px-8 max-w-7xl mx-auto mb-12">
+<span class="text-primary font-black uppercase tracking-[0.4em] text-xs">Voice of the Pit</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase mt-4">The Verdict</h2>
+</div>
+<div class="flex overflow-x-auto gap-8 px-8 no-scrollbar pb-12 snap-x">
+<div class="min-w-[320px] md:min-w-[500px] bg-surface-container-low p-12 snap-center border-t-4 border-primary relative">
+<span class="material-symbols-outlined text-6xl text-outline-variant/20 absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-xl md:text-2xl font-medium italic mb-8 leading-relaxed">"\#StrongIsHappy isn't just a gym; it's a cult of performance. My squat has increased by 150lbs in 6 months under their guidance."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-dim"></div>
+<div>
+<p class="font-bold uppercase tracking-widest text-sm">Marcus V.</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Competitive Powerlifter</p>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[500px] bg-surface-container-low p-12 snap-center border-t-4 border-secondary relative">
+<span class="material-symbols-outlined text-6xl text-outline-variant/20 absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-xl md:text-2xl font-medium italic mb-8 leading-relaxed">"The atmosphere here is unmatched. It's raw, industrial, and focused. If you're serious about results, this is the only spot in PHX."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary"></div>
+<div>
+<p class="font-bold uppercase tracking-widest text-sm">Elena R.</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Athlete</p>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[500px] bg-surface-container-low p-12 snap-center border-t-4 border-tertiary relative">
+<span class="material-symbols-outlined text-6xl text-outline-variant/20 absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-xl md:text-2xl font-medium italic mb-8 leading-relaxed">"Equipment is pristine. Coaches actually know their science. Best investment I've made in my health and strength."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary"></div>
+<div>
+<p class="font-bold uppercase tracking-widest text-sm">Jake D.</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Fitness Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ: Industrial Accordion -->
+<section class="py-24 bg-surface" id="faq">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-black uppercase mb-12 text-center">Intel / FAQ</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-low border-b border-outline-variant/10">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold uppercase tracking-widest text-sm">
+                            What are your operating hours?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant text-sm leading-relaxed border-t border-outline-variant/5 mt-2">
+                            We are open 24/7 for members. Our staffed hours are Monday-Friday 8am-8pm and Saturday 10am-4pm.
+                        </div>
+</details>
+<details class="group bg-surface-container-low border-b border-outline-variant/10">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold uppercase tracking-widest text-sm">
+                            Do you offer day passes?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant text-sm leading-relaxed border-t border-outline-variant/5 mt-2">
+                            Yes, day passes are available during staffed hours for $25. This includes full access to all equipment.
+                        </div>
+</details>
+<details class="group bg-surface-container-low border-b border-outline-variant/10">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none font-bold uppercase tracking-widest text-sm">
+                            Is coaching mandatory?
+                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant text-sm leading-relaxed border-t border-outline-variant/5 mt-2">
+                            No, but highly recommended for those looking to maximize their PR potential. We have various tiers of coaching available.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Contact: Form with Map -->
+<section class="flex flex-col md:flex-row min-h-[600px]" id="contact">
+<div class="w-full md:w-1/2 p-8 md:p-20 bg-surface-container-high flex flex-col justify-center">
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase mb-8 italic">Lock it In</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest mb-2 text-primary">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-secondary outline-none p-4 transition-colors" placeholder="YOUR NAME" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest mb-2 text-primary">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-secondary outline-none p-4 transition-colors" placeholder="EMAIL@EXAMPLE.COM" type="email"/>
+</div>
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest mb-2 text-primary">Goal</label>
+<select class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-secondary outline-none p-4 transition-colors appearance-none uppercase text-xs font-bold">
+<option>General Fitness</option>
+<option>Powerlifting</option>
+<option>Bodybuilding</option>
+<option>Other</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary font-black uppercase py-5 text-lg tracking-widest hover:bg-primary-container transition-all active:scale-95">Send Dispatch</button>
+</form>
+</div>
+<div class="w-full md:w-1/2 relative bg-surface-container-lowest flex items-center justify-center overflow-hidden min-h-[400px]">
+<div class="absolute inset-0 grayscale opacity-40 hover:opacity-70 transition-opacity">
+<img alt="Map Placeholder" class="w-full h-full object-cover" data-alt="Monochrome stylized map of central Phoenix Arizona showing urban grid pattern" data-location="Phoenix, AZ" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf17QonOOztfKvM8FHuT2qQk_iu2XEqj-yy4hxPT0gO601QuseKr9uUbWpqQ13QYUorT_Niw2BBlqqLpGI-NYZkTVmVO6R_jYMmPE2YqwyfcQVZYxV2_bhgeV0tF1N3ekG55rrR-UClzIi8uV1c4wYbF79i0PXsHslr1GCjrTAx1LsfMLyXmgSHYTuAj8d6DjPU6SkEj5BlnKZkrDYRIwyCK0aP_GzuqA7GZuOpS7yPy-SrYFQCXQPYO3RB5Adj7qqAX3BD8dg5GU"/>
+</div>
+<div class="relative z-10 bg-background/90 p-8 md:p-12 border border-primary/20 backdrop-blur-md max-w-sm text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="location_on">location_on</span>
+<h3 class="font-headline text-2xl font-black uppercase mb-2">Phoenix HQ</h3>
+<p class="text-on-surface-variant text-sm mb-6">123 Iron Core Way, Phoenix, AZ 85001</p>
+<a class="text-primary font-black text-xl hover:text-secondary transition-colors underline decoration-2 underline-offset-8" href="tel:+16022740733">602-274-0733</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left bg-[#000000] border-t-0 font-['Inter'] text-xs font-medium uppercase tracking-widest">
+<div class="flex flex-col gap-2">
+<span class="text-[#de2d2d] font-black text-2xl tracking-tighter">\#StrongIsHappy</span>
+<p class="text-white/40">© 2024 \#StrongIsHappy Gym Phoenix. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="tel:+16022740733">602-274-0733</a>
+<span class="text-white/40">Phoenix, AZ</span>
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="#">Privacy Policy</a>
+<a class="text-white/40 hover:text-[#ff8e84] transition-colors underline-on-hover" href="#">Terms of Service</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+</button>
+<button class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</button>
+</div>
+</footer>
+</body></html>
